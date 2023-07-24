@@ -26,8 +26,7 @@ const add = (...args) => {
 }
 
 
-
 console.log(add(1, 2, 3).value() === 6) // true
-console.log(add(1, 2)(3).value() === 6) // true
+console.log(add(1)(2, 3).value() === 6) // true
 console.log(add(1)(2)(3).value() === 6) // true
 console.log(add(1)(2) + 3) // 6
